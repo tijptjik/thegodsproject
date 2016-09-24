@@ -1,4 +1,5 @@
 SITENAME = ''
+SITETITLE = u'the god(s) project'
 SITEURL = ''
 TIMEZONE = 'Asia/Hong_Kong'
 DEFAULT_LANG = u'en'
