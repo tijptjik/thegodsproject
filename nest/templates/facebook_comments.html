@@ -1,0 +1,22 @@
+{% if FACEBOOK_APPID and SITEURL and article.status != "draft" %}
+    <div class="comments">
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+          appId      : {{ FACEBOOK_APPID }},
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId={{ FACEBOOK_APPID }}";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    </div>
+    <div class="fb-comments" data-href="{{ article.url }}" data-numposts="5"></div>
+{% endif %}
