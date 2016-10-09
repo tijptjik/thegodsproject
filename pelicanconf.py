@@ -14,14 +14,14 @@ SITESUBTITLE = u'the god(s) project'
 # Minified CSS
 NEST_CSS_MINIFY = True
 # Add items to top menu before pages
-MENUITEMS = [('Contact','/contact.html'), ('About','/about.html')]
+MENUITEMS = [('Episodes','/episodes.html'), ('Contact','/contact.html'), ('About','/about.html')]
 DISPLAY_PAGES_ON_MENU = False
 # Add header background image from content/images : 'background.jpg'
 NEST_HEADER_IMAGES = 'tgpbanner2.png'
 NEST_HEADER_LOGO = '/image/tgpthumbnail.png'
 # Footer
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
-NEST_SITEMAP_MENU = [('Archives', '/archives.html'),('Tags','/tags.html'), ('Authors','/authors.html')]
+NEST_SITEMAP_MENU = [('Archives', '/archives.html')]
 NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
 NEST_SITEMAP_RSS_LINK = u'RSS Feed'
 NEST_SOCIAL_COLUMN_TITLE = u'Social'
@@ -101,3 +101,5 @@ PAGE_URL = '{slug}.html'
 # Disable Tags
 TAGS_SAVE_AS = ''
 TAG_SAVE_AS = ''
+
+SOCIAL = [('Facebook','https://www.facebook.com/thegodsproject/'),('RTHK','http://programme.rthk.hk/channel/radio/programme.php?p=7395')]

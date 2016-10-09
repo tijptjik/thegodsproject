@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
-{% block title %}{{ NEST_ARCHIVES_HEAD_TITLE }} - {{ super() }}{% endblock title %}
-{% block description %}{{ NEST_ARCHIVES_HEAD_DESCRIPTION }}{% endblock description %}
+{% block title %}{{ NEST_CATEGORIES_HEAD_TITLE }} - {{ super() }}{% endblock title %}
+{% block description %}{{ NEST_CATEGORIES_HEAD_DESCRIPTION }}{% endblock description %}
 
 {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
@@ -18,7 +18,7 @@
                   <div class="header-content">
                       <h1 class="header-title text-uppercase">{{ NEST_ARCHIVES_HEADER_TITLE }}</h1>
                       <div class="header-underline"></div>
-                      <p class="header-subtitle header-subtitle-homepage">{{ NEST_ARCHIVES_HEADER_SUBTITLE }}</p>
+                      <p class="header-subtitle header-subtitle-homepage">{{ NEST_CATEGORIES_HEADER_SUBTITLE }}</p>
                   </div>
               </div>
         </div>
@@ -28,13 +28,15 @@
 {% block content %}
     <div class="archive-container">
         <div class="container content archive">
-            <h2><a href="{{ SITEURL }}/archives.html">{{ NEST_ARCHIVES_CONTENT_TITLE }}</a></h2>
+          {% for category, articles in categories %}
+            <h2><a href="{{ SITEURL }}/{{ category.url }}">{{ category|capitalize }}</a></h2>
             <dl class="dl-horizontal">
-            	{% for article in articles %}
-            	<dt>{{ article.locale_date}}</dt>
-            	<dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-            	{% endfor %}
+              {% for article in articles %}
+              <dt>{{ article.locale_date}}</dt>
+              <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+              {% endfor %}
             </dl>
+            {% endfor %}
         </div>
     </div>
 {% endblock content %}

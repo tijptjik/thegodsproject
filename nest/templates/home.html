@@ -23,17 +23,20 @@
 {% block content %}
 <div class="container content">
     <div class="row">
+    
     {% for article in articles %}
-      <div class="col-md-6 tgp-card">
-      <a href="{{ article.url }}">
-        <div class="tgp-card-thumbnail">
-          <img src="images/{{article.thumbnail}}" alt="">
-          <p class="category">{{article.category}}</p>
-          <p class="title">{{ article.title }}</p>
-        </div>
-        <!-- <dt>{{ article.locale_date}}</dt> -->
-      </div>  
-      </a>
+        {% if ( 'episode' in article.category|string())  or ('episodes' != page.slug) %}
+          <div class="col-md-6 tgp-card">
+          <a href="{{ article.url }}">
+            <div class="tgp-card-thumbnail">
+              <img src="images/{{article.thumbnail}}" alt="">
+              <p class="category {{article.category}}">{{article.category}}</p>
+              <p class="title {{article.category}}">{{ article.title }}</p>
+            </div>
+            <!-- <dt>{{ article.locale_date}}</dt> -->
+          </a>
+          </div> 
+        {% endif %}
     {% endfor %}
     </div>
 </div>

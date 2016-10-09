@@ -48,6 +48,10 @@
     right: 50px;
 }
 
+.tgp-card-thumbnail p.blog{
+    background: rgba(150, 150, 150, 0.97);
+}
+
 .tgp-card-thumbnail p.title {
     margin: 0 0 10px;
     bottom: 100px;
