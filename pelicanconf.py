@@ -32,7 +32,7 @@ NEST_FOOTER_HTML = ''
 # index.html
 NEST_INDEX_HEAD_TITLE = u'home'
 NEST_INDEX_HEADER_TITLE = u'the god(s) project'
-NEST_INDEX_HEADER_SUBTITLE = u'where doubt isn\'t always the opposite of belief'
+NEST_INDEX_HEADER_SUBTITLE = False
 NEST_INDEX_CONTENT_TITLE = u'Last Posts'
 # archives.html
 NEST_ARCHIVES_HEAD_TITLE = u'Archives'
