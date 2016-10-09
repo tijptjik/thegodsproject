@@ -1,4 +1,4 @@
 Title: Contact Us
 Slug: contact
 
-Please Contact us via
+Send us an email: thegodsproject.hk@gmail.com
