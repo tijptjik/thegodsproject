@@ -1,4 +1,5 @@
 SITENAME = ''
+SITENAME_SHORT = 'TGP'
 SITETITLE = u'the god(s) project'
 SITEURL = ''
 TIMEZONE = 'Asia/Hong_Kong'
