@@ -19,7 +19,7 @@ dependencies:
 - jupyter_core=4.1.0=py27_0
 - markdown=2.6.6=py27_0
 - markupsafe=0.23=py27_2
-- mistune=0.7.2=py27_0
+- mistune=0.7.2
 - nbconvert=4.2.0=py27_0
 - nbformat=4.0.1=py27_0
 - notebook=4.2.1=py27_0

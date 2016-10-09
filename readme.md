@@ -43,7 +43,7 @@ So based on the project structure, the config is managed by :
 
 ## Site Development
 
-Site development isdone following the conventions for `Pelican` [themes](http://docs.getpelican.com/en/3.6.3/themes.html) which uses [Jinja](http://jinja.pocoo.org/docs/dev/) for its templates.
+Site development isdone following the conventions for `Pelican` [themes](http://docs.getpelican.com/en/3.6.3/themes.html) which uses [Jinja](http://jinja.pocoo.org/docs/dev/) for its templates`.
 
 The Jinja templates are located at `nesttemplates`. Inspect the following three Jinja templates to get an idea of the site structure:
 
