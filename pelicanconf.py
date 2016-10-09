@@ -14,6 +14,7 @@ SITESUBTITLE = u'the god(s) project'
 NEST_CSS_MINIFY = True
 # Add items to top menu before pages
 MENUITEMS = [('Contact','/contact.html'), ('About','/about.html')]
+DISPLAY_PAGES_ON_MENU = False
 # Add header background image from content/images : 'background.jpg'
 NEST_HEADER_IMAGES = 'tgpbanner2.png'
 NEST_HEADER_LOGO = '/image/tgpthumbnail.png'
@@ -91,3 +92,11 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'}
 }
+
+INDEX_SAVE_AS = 'blog.html'
+PAGE_SAVE_AS = '{slug}.html'
+PAGE_URL = '{slug}.html'
+
+# Disable Tags
+TAGS_SAVE_AS = ''
+TAG_SAVE_AS = ''
