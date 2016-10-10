@@ -7,7 +7,7 @@ DEFAULT_LANG = u'en'
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['neighbors']
+PLUGINS = ['neighbors', 'liquid_tags.soundcloud']
 
 # Facebook
 FACEBOOK_APPID = '1792698777637826'
