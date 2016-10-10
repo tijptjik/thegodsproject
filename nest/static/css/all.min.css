@@ -120,6 +120,10 @@
       height: 320px !important;
       width: 320px !important;
     }
+
+    .footer-container {
+        margin-top: 20px;
+    }
 }
 
 @media only screen 
@@ -139,6 +143,10 @@
     .tgp-card-thumbnail {
       height: 568px !important;
       width: 568px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
     }
 }
 
@@ -163,6 +171,10 @@
       height: 375px !important;
       width: 375px !important;
     }
+
+    .footer-container {
+        margin-top: 20px;
+    }
 }
 
 @media only screen 
@@ -182,6 +194,10 @@
     .tgp-card-thumbnail {
       height: 667px !important;
       width: 667px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
     }
 }
 
@@ -204,6 +220,10 @@
       height: 414px !important;
       width: 414px !important;
     }
+
+    .footer-container {
+        margin-top: 20px;
+    }
 }
 
 @media only screen 
@@ -222,6 +242,10 @@
     .tgp-card-thumbnail {
       height: 736px !important;
       width: 736px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
     }
 }
 
