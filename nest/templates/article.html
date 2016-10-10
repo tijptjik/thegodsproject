@@ -81,6 +81,10 @@
         {% endif %}
 
         {% include "facebook_comments.html" %}
-        
+
+        {% if article.category|string() == 'episode' %}
+            {% include "soundcloud_analytics.html" %}
+        {% endif %}
+
     </div>
 {% endblock %}
