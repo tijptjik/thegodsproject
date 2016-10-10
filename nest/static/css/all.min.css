@@ -82,8 +82,9 @@ a.navigate{
     text-transform:uppercase;
     font-weight:600;
     color:#fff;
-    text-decoration:none
+    text-decoration:none;
     padding: 0;
+    margin: 16px 0;
 }
 
 a.navigate span {
