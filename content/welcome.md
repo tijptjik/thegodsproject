@@ -5,11 +5,9 @@ Category: blog
 Author: the god(s) project
 Summary: This is the god(s) project - where doubt isn't always the oppsite of faith.
 Illustration: placeholder.jpg
-Thumbnail: placeholder_icon3.jpg
+Thumbnail: welcome_thumb.png
 
-## Episode 1
-# Heading 1
-### Heading 2
+# Introducing the god(s) project
 
 The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
 
