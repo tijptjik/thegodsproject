@@ -5,6 +5,10 @@ SITEURL = ''
 TIMEZONE = 'Asia/Hong_Kong'
 DEFAULT_LANG = u'en'
 
+# Plugins
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['neighbors']
+
 # Facebook
 FACEBOOK_APPID = '1792698777637826'
 
