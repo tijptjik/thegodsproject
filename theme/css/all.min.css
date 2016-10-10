@@ -21,7 +21,6 @@
     text-transform: none;
 }
 
-
 .tgp-card {
     height: 400px;
 }
@@ -74,6 +73,160 @@
     width: 130%;
 }
 
+@media only screen and (max-device-width : 736px){
+
+    .container.cards {
+        padding: 0 20px;
+    }
+
+    .tgp-card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .tgp-card-thumbnail img {
+          top: 0;
+          left: 0;
+          position: static;
+          margin:0;
+          transform: translate(0, 0);
+    }
+     
+    .tgp-card-thumbnail img:hover {
+        width: 100%;
+    }
+
+    .header-nav .nav a {
+        margin-left: 8px;
+    }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+@media only screen 
+  and (device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container.cards {
+        padding: 0;
+    }
+
+    .tgp-card {
+        height: 320px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 320px !important;
+      width: 320px !important;
+    }
+}
+
+@media only screen 
+  and (device-width: 568px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container.cards {
+        padding: 0;
+    }
+
+
+    .tgp-card {
+        height: 568px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 568px !important;
+      width: 568px !important;
+    }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+
+@media only screen 
+  and (device-width: 375px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+
+    .tgp-card {
+        height: 375px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 375px !important;
+      width: 375px !important;
+    }
+}
+
+@media only screen 
+  and (device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+
+    .tgp-card {
+        height: 667px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 667px !important;
+      width: 667px !important;
+    }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+@media only screen 
+  and (device-width: 414px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+    .tgp-card {
+        height: 414px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 414px !important;
+      width: 414px !important;
+    }
+}
+
+@media only screen 
+  and (device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+    .tgp-card {
+        height: 736px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 736px !important;
+      width: 736px !important;
+    }
+}
+
+/* NAVIGATION */
+
 a.navigate{
     background-color:white;
     font-size:12px;
@@ -108,52 +261,4 @@ a.navigate.right span.title {
 a.navigate.right span.direction,
 a.navigate.left span.title {
     padding-left: 8px;
-}
-
-@media only screen and (max-device-width : 736px){
-
-    .container.cards {
-        padding: 0;
-    }
-
-    .tgp-card {
-        height: 320px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .tgp-card-thumbnail {
-      overflow: hidden !important;
-      height: 320px !important;
-      width: 320px !important;
-      position: relative;
-    }
-
-    .tgp-card-thumbnail p.category {
-        margin: 0 0 10px;
-        bottom: 70px;
-        right: 50px;
-    }
-
-    .tgp-card-thumbnail p.title {
-        margin: 0 0 10px;
-        bottom: 100px;
-        right: 50px;
-    }
-
-    .tgp-card-thumbnail img {
-          overflow: hidden;
-          width: 100%;
-          position: static;
-          margin:0;
-    }
-     
-    .tgp-card-thumbnail img:hover {
-        width: 100%;
-    }
-
-    .header-nav .nav a {
-        margin-left: 8px;
-    }
-
 }
