@@ -22,10 +22,6 @@
                       <p class="header-date">{{ article.locale_date }}{% if article.modified %}, {{ NEST_ARTICLE_HEADER_MODIFIED }} {{ article.locale_modified }}{% endif %}</p>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
-                      <p class="pull-right header-tags">
-                          <span class="glyphicon glyphicon-tags mr5" aria-hidden="true"></span>
-                          {% for tag in article.tags|sort %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
-                      </p>
                   </div>
               </div>
         </div>
