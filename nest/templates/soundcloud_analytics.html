@@ -1,0 +1,38 @@
+{% if GOOGLE_ANALYTICS and SITEURL %}
+<script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
+<script type="text/javascript">
+    var SCGA = SCGA || function() {
+        var linkWidget = function(widgetId) {
+            if (SC && ga) {
+                registerSoundCloudListeners(widgetId);
+            }
+        };
+
+        var registerSoundCloudListeners = function(widgetId) {
+            widget = SC.Widget(widgetId);
+            widget.bind(SC.Widget.Events.PLAY, sendAnalyticsEvent(widget, 'Play'));
+            widget.bind(SC.Widget.Events.PAUSE, sendAnalyticsEvent(widget, 'Pause'));
+            widget.bind(SC.Widget.Events.SEEK, sendAnalyticsEvent(widget, 'Seek'));
+            widget.bind(SC.Widget.Events.FINISH, sendAnalyticsEvent(widget, 'Finish'));
+        };
+
+        var sendAnalyticsEvent = function(widget, event){
+            return function(data) {
+                widget.getCurrentSound(function(sound) {
+                    ga('send', 'event', 'SoundCloud', event, sound.title, data.currentPosition);
+                });
+            };
+        };
+
+        return {
+            linkWidget : linkWidget
+        };
+    }();
+
+    $(document).ready(function() {
+            SCGA.linkWidget("scWidget");
+        });
+</script>
+<noscript>Please enable JavaScript to view the comments.</noscript>
+
+{% endif %}
