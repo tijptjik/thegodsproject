@@ -109,7 +109,7 @@
     .tgp-card-thumbnail img {
           overflow: hidden;
           width: 100%;
-          position: relative;
+          position: static;
           margin:0;
     }
      
