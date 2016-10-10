@@ -77,7 +77,7 @@
 
 @media only screen and (max-width : 321px) {
 
-    .container.content {
+    .container.cards {
         padding: 0;
     }
 

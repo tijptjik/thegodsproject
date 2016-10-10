@@ -91,11 +91,36 @@ NEST_TAGS_CONTENT_TITLE = u'Tags List'
 NEST_TAGS_CONTENT_LIST = u'tagged'
 
 # Static files
-STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', 'extra/CNAME']
+STATIC_PATHS = ['images', 'extra/ms-icon-144x144.png', 'extra/ms-icon-150x150.png', 'extra/ms-icon-310x310.png', 'extra/ms-icon-70x70.png', 'extra/android-icon-144x144.png', 'extra/android-icon-192x192.png', 'extra/android-icon-36x36.png', 'extra/android-icon-48x48.png', 'extra/android-icon-72x72.png', 'extra/android-icon-96x96.png', 'extra/apple-icon-114x114.png', 'extra/apple-icon-120x120.png', 'extra/apple-icon-144x144.png', 'extra/apple-icon-152x152.png', 'extra/apple-icon-180x180.png', 'extra/apple-icon-57x57.png', 'extra/apple-icon-60x60.png', 'extra/apple-icon-72x72.png', 'extra/apple-icon-76x76.png', 'extra/apple-icon-precomposed.png', 'extra/apple-icon.png', 'extra/browserconfig.xml', 'extra/CNAME', 'extra/favicon-16x16.png', 'extra/favicon-32x32.png', 'extra/favicon-96x96.png', 'extra/favicon.ico', 'extra/manifest.json']
 EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/CNAME': {'path': 'CNAME'}
+    'extra/ms-icon-144x144.png' : {'path' : 'ms-icon-144x144.png'},
+    'extra/ms-icon-150x150.png' : {'path' : 'ms-icon-150x150.png'},
+    'extra/ms-icon-310x310.png' : {'path' : 'ms-icon-310x310.png'},
+    'extra/ms-icon-70x70.png' : {'path' : 'ms-icon-70x70.png'},
+    'extra/android-icon-144x144.png' : {'path' : 'android-icon-144x144.png'},
+    'extra/android-icon-192x192.png' : {'path' : 'android-icon-192x192.png'},
+    'extra/android-icon-36x36.png' : {'path' : 'android-icon-36x36.png'},
+    'extra/android-icon-48x48.png' : {'path' : 'android-icon-48x48.png'},
+    'extra/android-icon-72x72.png' : {'path' : 'android-icon-72x72.png'},
+    'extra/android-icon-96x96.png' : {'path' : 'android-icon-96x96.png'},
+    'extra/apple-icon-114x114.png' : {'path' : 'apple-icon-114x114.png'},
+    'extra/apple-icon-120x120.png' : {'path' : 'apple-icon-120x120.png'},
+    'extra/apple-icon-144x144.png' : {'path' : 'apple-icon-144x144.png'},
+    'extra/apple-icon-152x152.png' : {'path' : 'apple-icon-152x152.png'},
+    'extra/apple-icon-180x180.png' : {'path' : 'apple-icon-180x180.png'},
+    'extra/apple-icon-57x57.png' : {'path' : 'apple-icon-57x57.png'},
+    'extra/apple-icon-60x60.png' : {'path' : 'apple-icon-60x60.png'},
+    'extra/apple-icon-72x72.png' : {'path' : 'apple-icon-72x72.png'},
+    'extra/apple-icon-76x76.png' : {'path' : 'apple-icon-76x76.png'},
+    'extra/apple-icon-precomposed.png' : {'path' : 'apple-icon-precomposed.png'},
+    'extra/apple-icon.png' : {'path' : 'apple-icon.png'},
+    'extra/browserconfig.xml' : {'path' : 'browserconfig.xml'},
+    'extra/CNAME' : {'path' : 'CNAME'},
+    'extra/favicon-16x16.png' : {'path' : 'favicon-16x16.png'},
+    'extra/favicon-32x32.png' : {'path' : 'favicon-32x32.png'},
+    'extra/favicon-96x96.png' : {'path' : 'favicon-96x96.png'},
+    'extra/favicon.ico' : {'path' : 'favicon.ico'},
+    'extra/manifest.json' : {'path' : 'manifest.json'}
 }
 
 INDEX_SAVE_AS = 'blog.html'
