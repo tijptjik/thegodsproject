@@ -193,9 +193,10 @@ stuff stuff stuff</p>
         };
     }();
 
-    $(document).ready(function() {
-            SCGA.linkWidget("scWidget");
-        });
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      SCGA.linkWidget("scWidget");
+    });
+
 </script>
 <noscript>Please enable JavaScript to view the comments.</noscript>
 
