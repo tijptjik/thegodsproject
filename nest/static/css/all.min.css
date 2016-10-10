@@ -110,7 +110,7 @@ a.navigate.left span.title {
     padding-left: 8px;
 }
 
-@media only screen and (max-width : 321px) {
+@media only screen and (max-device-width : 736px){
 
     .container.cards {
         padding: 0;
@@ -153,7 +153,7 @@ a.navigate.left span.title {
     }
 
     .header-nav .nav a {
-        margin-left: 8px;        
+        margin-left: 8px;
     }
 
 }
