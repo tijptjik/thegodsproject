@@ -60,70 +60,6 @@
             ga('create', 'UA-85430564-1', 'auto');
             ga('send', 'pageview');
 
-            function playEventHandler(song) {
-                returnfunction(eventData) {
-                    song.getCurrentSound(function(sound) {
-                        setTimeout(function() {
-                            window.soundB = sound.title;
-                        }, 1);
-                    });
-                }
-            }
-
-            function playProgressEventHandler(song) {
-                returnfunction(eventData) {
-                    song.getCurrentSound(function(sound) {
-                        window.t = Math.floor(eventData.relativePosition * 100);
-                    });
-                }
-            }
-
-            function pauseEventHandler(song) {
-                returnfunction(eventData) {
-                    song.getCurrentSound(function(sound) {
-                        _gaq.push(['_trackEvent', 'SC_pause', window.soundB, calcT(window.t)]);
-                    });
-                }
-            }
-
-            function seekEventHandler(song) {
-                returnfunction(eventData) {
-                    song.getCurrentSound(function(sound) {
-                        if (eventData.relativePosition === 0) {
-                            _gaq.push(['_trackEvent', 'SC_complete', window.soundB, '100']);
-                        }
-                    });
-                }
-            }
-
-            function calcT(_t) {
-                if (_t <= 0 || _t > 100) return;
-                var bucket = (_t > 10 ? 1 : 0) * (Math.floor((_t —  1) / 10) * 10 + 1);
-                bucket = String(bucket) + '-' + String(Math.ceil(_t / 10) * 10);
-                return bucket;
-            }
-
-            $(document).ready(function() {
-                window.t = 0;
-                window.soundB;
-                var i, song, iframes = document.getElementsByTagName('iframe');
-                for (i = 0; i < iframes.length; i++) {
-                    if (iframes[i].src.indexOf('//w.soundcloud.com/player') > -1) {
-                        iframes[i].id = "sc_player_" + i;
-                        song = SC.Widget(iframes[i].id);
-                        song.bind(SC.Widget.Events.PLAY_PROGRESS, playProgressEventHandler(song));
-                        song.bind(SC.Widget.Events.PLAY, playEventHandler(song));
-                        song.bind(SC.Widget.Events.PAUSE, pauseEventHandler(song));
-                        song.bind(SC.Widget.Events.SEEK, seekEventHandler(song));
-                    }
-                }
-            });
-            $(window).on('beforeunload', function() {
-                if (window.t !== 0) {
-                    _gaq.push(['_trackEvent', 'SC_exit', window.soundB, calcT(window.t)]);
-                }
-            });
-
 
 
         </script>
@@ -225,7 +161,44 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     </div>
     <div class="fb-comments" data-width="100%" data-order_by='time' data-href="the-catholics.html" data-numposts="5"></div>
-        
+
+<script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
+<script type="text/javascript">
+    var SCGA = SCGA || function() {
+        var linkWidget = function(widgetId) {
+            if (SC && ga) {
+                registerSoundCloudListeners(widgetId);
+            }
+        };
+
+        var registerSoundCloudListeners = function(widgetId) {
+            widget = SC.Widget(widgetId);
+            widget.bind(SC.Widget.Events.PLAY, sendAnalyticsEvent(widget, 'Play'));
+            widget.bind(SC.Widget.Events.PAUSE, sendAnalyticsEvent(widget, 'Pause'));
+            widget.bind(SC.Widget.Events.SEEK, sendAnalyticsEvent(widget, 'Seek'));
+            widget.bind(SC.Widget.Events.FINISH, sendAnalyticsEvent(widget, 'Finish'));
+        };
+
+        var sendAnalyticsEvent = function(widget, event){
+            return function(data) {
+                widget.getCurrentSound(function(sound) {
+                    ga('send', 'event', 'SoundCloud', event, sound.title, data.currentPosition);
+                });
+            };
+        };
+
+        return {
+            linkWidget : linkWidget
+        };
+    }();
+
+    $(document).ready(function() {
+            SCGA.linkWidget("scWidget");
+        });
+</script>
+<noscript>Please enable JavaScript to view the comments.</noscript>
+
+
     </div>
         <!-- /Content --> 
 
