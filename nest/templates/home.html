@@ -31,7 +31,10 @@
             <div class="tgp-card-thumbnail">
               <img src="images/{{article.thumbnail}}" alt="">
               <p class="title {{article.category}}">{{ article.title }}</p>
-              <p class="category {{article.category}}">{{article.category}} #{{article.episode}}</p>
+              <p class="category {{article.category}}">{{article.category}} 
+                {% if ( 'episode' in article.category|string()) %}
+                  #{{article.episode}}
+                {% endif %}</p>
             </div>
             <!-- <dt>{{ article.locale_date}}</dt> -->
           </a>
