@@ -31,52 +31,25 @@
 
 {% block content %}
     <div class="container content">
+
+        <!-- ARTICLE -->
+        
         {{ article.content }}
+        
+        <!-- NAVIGATION -->
 
-         {% if article.prev_article %}
-          <ul>
-             <li>
-                 <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
-                     {{ article.prev_article.title }}
-                 </a>
-             </li>
-         {% endif %}
-         {% if article.next_article %}
-             <li>
-                 <a href="{{ SITEURL }}/{{ article.next_article.url}}">
-                     {{ article.next_article.title }}
-                 </a>
-             </li>
-         {% endif %}
-        </ul>
-        <ul>
-         {% if article.prev_article_in_category %}
-             <li>
-                 <a href="{{ SITEURL }}/{{ article.prev_article_in_category.url}}">
-                     {{ article.prev_article_in_category.title }}
-                 </a>
-             </li>
-         {% endif %}
-         {% if article.next_article_in_category %}
-             <li>
-                 <a href="{{ SITEURL }}/{{ article.next_article_in_category.url}}">
-                     {{ article.next_article_in_category.title }}
-                 </a>
-             </li>
-         </ul>
-         {% endif %}
+        {% if article.prev_article %}
+            <a class="navigate pull-left left" href="{{ SITEURL }}/{{ article.prev_article.url}}"><span class="direction"><i class="fa fa-caret-left"></i> {{ NEST_PAGINATION_PREVIOUS }} </span><span class="title">{{ article.prev_article.title }}</span></a>
+          {% endif %}
+          {% if article.next_article %}
+            <a class="navigate pull-right right" href="{{ SITEURL }}/{{ article.next_article.url}}"><span class="title">{{ article.next_article.title }}</span> <span class="direction">{{ NEST_PAGINATION_NEXT }} <i class="fa fa-caret-right"></i></span></a>
+          {% endif %}
 
-        {% if article.related_posts %}
-            <h4>Articles connexes</h4>
-            <dl class="dl-horizontal">
-            {% for related_post in article.related_posts %}
-                <dt>{{ related_post.locale_date}}</dt>
-                <dd><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></dd>
-            {% endfor %}
-            </dl>
-        {% endif %}
+        <!-- FACEBOOK COMMENTS -->
 
         {% include "facebook_comments.html" %}
+
+        <!-- SOUNDCLOUD ANALYTICS -->
 
         {% if article.category|string() == 'episode' %}
             {% include "soundcloud_analytics.html" %}
