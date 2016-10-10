@@ -35,7 +35,7 @@ def get_widget(track_url):
         'http://soundcloud.com/oembed',
         data='format=json&url={}'.format(track_url).encode('utf-8'))
 
-    return json.loads(r.read().decode('utf-8'))['html'].replace('<iframe', '<iframe id="scWidget"').replace('height="400"', 'height="668"').replace("&show_artwork=true","&show_artwork=true&auto_play=true")
+    return json.loads(r.read().decode('utf-8'))['html'].replace('<iframe', '<iframe id="scWidget"').replace('height="400"', 'height="162"').replace("&show_artwork=true","&show_artwork=true&auto_play=true").replace('visual=true','visual=false')
 
 
 def match_it(markup):
