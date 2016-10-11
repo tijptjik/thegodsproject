@@ -11,7 +11,7 @@
 
 /*! Custom : the god(s) project */
 
-@media (min-width:320px){
+@media (min-width:319px){
     .header-container {
         min-height: 315px;
     }
@@ -20,7 +20,6 @@
 .text-uppercase {
     text-transform: none;
 }
-
 
 .tgp-card {
     height: 400px;
@@ -72,4 +71,218 @@
  
 .tgp-card-thumbnail img:hover {
     width: 130%;
+}
+
+@media only screen and (max-device-width : 736px){
+
+    .container.cards {
+        padding: 0 20px;
+    }
+
+    .tgp-card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .tgp-card-thumbnail img {
+          top: 0;
+          left: 0;
+          position: static;
+          margin:0;
+          transform: translate(0, 0);
+    }
+     
+    .tgp-card-thumbnail img:hover {
+        width: 100%;
+    }
+
+    .header-nav .nav a {
+        margin-left: 8px;
+    }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+@media only screen 
+  and (device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container.cards {
+        padding: 0;
+    }
+
+    .tgp-card {
+        height: 320px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 320px !important;
+      width: 320px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
+    }
+}
+
+@media only screen 
+  and (device-width: 568px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container.cards {
+        padding: 0;
+    }
+
+
+    .tgp-card {
+        height: 568px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 568px !important;
+      width: 568px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
+    }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+
+@media only screen 
+  and (device-width: 375px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+
+    .tgp-card {
+        height: 375px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 375px !important;
+      width: 375px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
+    }
+}
+
+@media only screen 
+  and (device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+
+    .tgp-card {
+        height: 667px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 667px !important;
+      width: 667px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
+    }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+@media only screen 
+  and (device-width: 414px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+    .tgp-card {
+        height: 414px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 414px !important;
+      width: 414px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
+    }
+}
+
+@media only screen 
+  and (device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+        .container.cards {
+        padding: 0;
+    }
+
+    .tgp-card {
+        height: 736px;
+        margin: 20px 0;
+    }
+
+    .tgp-card-thumbnail {
+      height: 736px !important;
+      width: 736px !important;
+    }
+
+    .footer-container {
+        margin-top: 20px;
+    }
+}
+
+/* NAVIGATION */
+
+a.navigate{
+    background-color:white;
+    font-size:12px;
+    min-width:100px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:600;
+    color:#fff;
+    text-decoration:none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+a.navigate span {
+    padding:4px 8px;
+}
+
+span.direction {
+    background-color:rgba(0,0,0,.5);
+}
+span.title {
+    background-color: white;
+    color:grey;
+    padding: 4px;
+ }   
+
+a.navigate.left span.direction,
+a.navigate.right span.title {
+    padding-right: 8px;
+}
+
+a.navigate.right span.direction,
+a.navigate.left span.title {
+    padding-left: 8px;
 }
