@@ -1,0 +1,21 @@
+
+
+## Local Site on
+
+```bash
+http://localhost:8000/
+```
+
+## Terminal Commands
+
+1. Generate the site locally, and watch for changes
+
+```bash
+cd ~/code/thegodsproject/ && source activate thegodsproject && make devserver
+```
+
+2. Publish the site
+
+```bash
+cd ~/code/thegodsproject/ && source activate thegodsproject && make github
+```

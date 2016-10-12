@@ -14,7 +14,7 @@ the god(s) project makes its own editorial decisions.
 
 **Why are you doing this?**
 
-Hong Kong is one of the most religiously diverse cities in the world, which is awesome - but beyond walking past mosques, temples, churches and other places of worship on a daily basis, there is little opportunity to know what goes on behind those walls.  the god(s) project intends to expand our understanding of spirituality beyond the cursory tenets of each religion.  Faith can play a significant part in how people think about themselves and their actions, and we want to see how the texture of that faith changes throughout someone’s life.  That’s really what it comes down to - understanding how faith and its variety of forms encourage people to think differently about their actions and decisions.
+Hong Kong is one of the most religiously diverse cities in the world, which is awesome - but beyond walking past mosques, temples, churches and other places of worship on a daily basis, there is little opportunity to know what goes on in the lives of the people who seek behind those walls.  the god(s) project intends to explore faith beyond the cursory tenets of each religion.  Faith can play a significant part in how people think about themselves and their actions, and we want to see how its texture changes throughout someone’s life.  That’s really what it comes down to - understanding how faith and its variety of forms spur people to think about how they live and who they are.
 
 **Who are you, even?**
 
