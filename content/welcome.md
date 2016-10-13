@@ -27,5 +27,5 @@ This wasn’t too surprising.  I had attended Alpha (a crash course on Christian
 
 So it’s this ongoing life-sorting process, as well as a total obsession with people’s stories in faith, that has spurred the creation of the god(s) project.  I’m not trying to draw any big, grand conclusions about religion here; rather, it’s a small window into someone’s particular experience, wrapped up in a love letter to Hong Kong.
 
-I hope you enjoy it.  And I’m looking forward to hearing what you think.
+I hope you enjoy it.  And I’m looking forward to hearing what you think.  Huge thanks to Tegan Smyth and Kenji Morimoto for all their researching help and support through it all.
 
