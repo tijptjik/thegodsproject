@@ -8,7 +8,7 @@ the god(s) project explores how people in this city experience spirituality and 
 
 **How do you exist?**
 
-the god(s) project was selected as one of a few English-language programs to be broadcast on DAB 31, RTHK under CIBS, the Community Involvement Broadcasting Service.  CIBS is funded by the the government’s Community Involvement Broadcasting Fund, which provides resources for groups or individuals to produce their own radio programs.
+the god(s) project was selected as one of a few English-language programs to be broadcast on DAB 31, RTHK under CIBS, the Community Involvement Broadcasting Service.  CIBS is funded by the government’s Community Involvement Broadcasting Fund, which provides resources for groups or individuals to produce their own radio programs.
 
 the god(s) project makes its own editorial decisions.
 
