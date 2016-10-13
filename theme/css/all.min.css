@@ -291,13 +291,19 @@ h2.section {
     font-size: 20px;
     line-height: 1.285714285714286em;
     font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 40px;
     text-align: center;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 40px;
     line-height: 31px;
+}
+
+@media only screen and (max-device-width : 736px){
+
+    h2.section {
+        margin-top: 32px;
+        margin-bottom: 20px;
+    }
 }
 
 h2.section:after {
